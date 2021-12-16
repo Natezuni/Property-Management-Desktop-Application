@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="124ff21564d842cb83b0c0fef1ef5ef9" Name="Diagram1">
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Appartment" Width="1.5" PointX="5.25" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Appointment" Width="1.5" PointX="8.25" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Building" Width="1.5" PointX="7.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Event" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Manager" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Message" Width="1.5" PointX="5.25" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Owner" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyManagementDBModel.Tenant" Width="1.5" PointX="2.25" PointY="21.75" IsExpanded="true" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Appartmen__Manag__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Appartmen__Tenan__14270015" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Buildings__Appar__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Appointme__Manag__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Appointme__Tenan__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Buildings__Manag__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Events__ManagerI__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Events__OwnerID__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Managers__Tenant__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Messages__Manage__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Owners__ManagerI__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Tenants__manager__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Messages__Tenant__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyManagementDBModel.FK__Owners__TenantID__797309D9" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

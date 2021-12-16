@@ -1,0 +1,96 @@
+﻿@model FinalProject_1933112.Models.Tenant
+
+@{
+    ViewBag.Title = "Tenants Login Page";
+}
+
+
+@using (Html.BeginForm())
+{
+    <center>
+        <div class="bs-example" style="border:2px solid gray;">
+
+            <div class="form-group centerlook">
+                <h1> Tenants Login </h1>
+            </div>
+            <div class="form-group centerlook">
+                <label>User Name: </label>
+                @Html.EditorFor(model => model.firstName)*
+                @Html.ValidationMessageFor(model => model.firstName)
+            </div>
+            <div class="form-group centerlook">
+                <label>Password:</label>
+                @Html.EditorFor(model => model.password)*
+                @Html.ValidationMessageFor(model => model.password)
+
+            </div>
+            <div class="form-group error">
+                @if (@ViewBag.Failedcount != null)
+                {
+
+                    <label> Failed Attempt count is: @ViewBag.Failedcount</label>
+                }
+
+                @if (@ViewBag.NotValidUser != null)
+                {
+
+                    <label> @ViewBag.NotValidUser</label>
+                }
+            </div>
+            <div class="loginbtn">
+
+                <input type="submit" value="Login" class="btn btn-primary" />
+
+            </div>
+            <button onclick="location.href='@Url.Action("Create", "Tenants")';return false;">Create an Account</button>
+        </div>
+        <button onclick="location.href='@Url.Action("LoginPage", "Home")';return false;">Back to main page</button>
+    </center>
+}
+
+
+@*<h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.firstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manager.FirstName)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.firstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manager.FirstName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.tenantID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.tenantID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.tenantID })
+            </td>
+        </tr>
+    }
+
+    </table>*@

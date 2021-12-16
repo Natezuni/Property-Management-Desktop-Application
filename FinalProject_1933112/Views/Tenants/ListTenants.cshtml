@@ -1,0 +1,51 @@
+﻿@model IEnumerable<FinalProject_1933112.Models.Tenant>
+
+@{
+    ViewBag.Title = "ListTenants";
+}
+
+<h2>ListTenants</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           <text>Tenant's </text> @Html.DisplayNameFor(model => model.firstName)
+        </th>
+        <th>
+            <text>Tenant's </text>@Html.DisplayNameFor(model => model.lastName)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>*@
+        <th>
+            <text>Manager's </text>@Html.DisplayNameFor(model => model.Manager.FirstName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Manager.FirstName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.tenantID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.tenantID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.tenantID })
+        </td>
+    </tr>
+}
+
+</table>

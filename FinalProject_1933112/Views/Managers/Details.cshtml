@@ -1,0 +1,149 @@
+﻿@model FinalProject_1933112.Models.Manager
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Managers Options</h2>
+
+<button onclick="location.href='@Url.Action("ListBuildings", "Buildings")';return false;">List all Buildings</button>
+<button onclick="location.href='@Url.Action("Create", "Buildings")';return false;">Create new Building</button>
+
+<br>
+
+
+<input type="text" id="id2" name="id2">
+<br>
+<button onclick="location.href='@Url.Action("Edit", "Buildings")';return false;">Edit Building</button>
+<button onclick="location.href='@Url.Action("Delete", "Buildings")';return false;">Delete Building</button>
+
+
+<br>
+<hr>
+
+
+<h2>Tenants Options</h2>
+<button onclick="location.href='@Url.Action("List", "Tenants")';return false;">List all Tenants</button>
+<button onclick="location.href='@Url.Action("Create", "Tenants")';return false;">Create new Tenant</button>
+
+<br>
+
+
+<input type="text" id="id2" name="id2">
+<br>
+<button onclick="location.href='@Url.Action("Edit", "Tenants")';return false;">Edit Tenant</button>
+<button onclick="location.href='@Url.Action("Delete", "Tenants")';return false;">Delete Tenant</button>
+<br>
+<hr />
+<h3>Appartment Status</h3>
+<button onclick="location.href='@Url.Action("Index", "Appartments")';return false;">List all Appartments</button>
+
+
+
+
+
+
+@*<hr />
+    <div>
+        <h4>Manager Profile</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Manager.FirstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Manager.FirstName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tenant.firstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tenant.firstName)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ManagerID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@
+
+
+
+@*@model FinalProject_1933112.Models.Manager
+
+    @{
+        ViewBag.Title = "Details";
+    }
+
+    <h2>Details</h2>
+
+    <div>
+        <h4>Manager</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tenant.firstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tenant.firstName)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ManagerID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

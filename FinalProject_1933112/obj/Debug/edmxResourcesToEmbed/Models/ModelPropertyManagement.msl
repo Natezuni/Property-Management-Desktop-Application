@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PropertyManagementDBModelStoreContainer" CdmEntityContainer="PropertyManagementDBEntities2">
+    <EntitySetMapping Name="Appartments">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Appartment">
+        <MappingFragment StoreEntitySet="Appartments">
+          <ScalarProperty Name="AppartmentID" ColumnName="AppartmentID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointments">
+          <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
+          <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="Appointment1" ColumnName="Appointment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Buildings">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Building">
+        <MappingFragment StoreEntitySet="Buildings">
+          <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+          <ScalarProperty Name="nbAppartments" ColumnName="nbAppartments" />
+          <ScalarProperty Name="AppartmentID" ColumnName="AppartmentID" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Event">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Managers">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Manager">
+        <MappingFragment StoreEntitySet="Managers">
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Message">
+        <MappingFragment StoreEntitySet="Messages">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="Message1" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Owners">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Owner">
+        <MappingFragment StoreEntitySet="Owners">
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tenants">
+      <EntityTypeMapping TypeName="PropertyManagementDBModel.Tenant">
+        <MappingFragment StoreEntitySet="Tenants">
+          <ScalarProperty Name="tenantID" ColumnName="tenantID" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="managerID" ColumnName="managerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

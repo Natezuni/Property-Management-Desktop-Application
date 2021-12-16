@@ -1,0 +1,88 @@
+﻿@model FinalProject_1933112.Models.Owner
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Managers Options</h2>
+
+<button onclick="location.href='@Url.Action("ListManagers", "Managers")';return false;">List all Managers</button>
+<button onclick="location.href='@Url.Action("Create", "Managers")';return false;">Create new Manager</button>
+
+<br>
+
+
+
+<button onclick="location.href='@Url.Action("Edit", "Managers")';return false;">Edit Managers</button>
+<button onclick="location.href='@Url.Action("Delete", "Managers")';return false;">Delete Managers</button>
+
+
+<br>
+<br>
+<hr>
+
+
+<h2>Tenants Options</h2>
+<button onclick="location.href='@Url.Action("ListTenants", "Tenants")';return false;">List all Tenants</button>
+<button onclick="location.href='@Url.Action("Create", "Tenants")';return false;">Create new Tenant</button>
+
+<br>
+
+
+<input type="text" id="id" name="id">
+
+<button onclick="location.href='@Url.Action("Edit", "Tenants")';return false;">Edit Tenant</button>
+<button onclick="location.href='@Url.Action("Delete", "Tenants")';return false;">Delete Tenant</button>
+
+
+<hr />
+<div>
+    <h4>Owner Profile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tenant.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenant.firstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OwnerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
